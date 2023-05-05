@@ -4,10 +4,6 @@ import Dashboard from '@/pages/dashboard'
 import SmartCity from '@/pages/smart-city'
 import SmartPark from '@/pages/smart-park'
 import Login from '@/pages/login'
-import SystemSettings from '@/pages/system-settings'
-import ComponentsManagement from '@/pages/components-management'
-import Ongoing from '@/pages/project-management/ongoing'
-import Delivered from '@/pages/project-management/delivered'
 import { RoutesProps } from './interface'
 
 /**
@@ -47,74 +43,6 @@ const routes: RoutesProps[] = [
     name: '智慧园区',
     path: '/smart-park',
     element: <SmartPark />
-  },
-  {
-    name: '组件管理',
-    path: '/components-managament',
-    children: [
-      {
-        name: '滚动表格',
-        path: '/scroll-table',
-        element: <ComponentsManagement.ScrollTable />
-      }
-    ]
-  },
-  {
-    name: '系统设置',
-    path: '/system-settings',
-    children: [
-      {
-        name: '角色管理',
-        path: '/role-management',
-        element: <SystemSettings.RoleManagement />
-      },
-      {
-        name: '权限配置',
-        path: '/permission-quota',
-        parentPath: '/role-management',
-        hideMenu: true,
-        element: <SystemSettings.PermissionQuota />
-      },
-      {
-        name: '菜单管理',
-        path: '/menu-management',
-        element: <SystemSettings.MenuManagement />
-      },
-      {
-        name: '组织管理',
-        path: '/organizational-management',
-        element: <SystemSettings.OrganizationalManagement />
-      },
-      {
-        name: '用户管理',
-        path: '/user-management',
-        element: <SystemSettings.UserManagement />
-      },
-      {
-        name: '系统日志',
-        path: '/log-management',
-        element: <SystemSettings.LogManagement />
-      }
-    ]
-  },
-  {
-    icon: <Icon type='file-text' />,
-    name: '项目管理',
-    path: '/project-management',
-    children: [
-      {
-        name: '进行中',
-        path: '/ongoing',
-        element: <Ongoing />,
-        breadcrumb: [{ name: '首页', link: '/home' }]
-      },
-      {
-        name: '已交付',
-        path: '/delivered',
-        element: <Delivered />,
-        breadcrumb: [{ name: '概览', link: '/overview' }]
-      }
-    ]
   }
 ]
 
