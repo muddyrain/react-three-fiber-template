@@ -3,6 +3,7 @@ import Home from '@/pages/home'
 import Dashboard from '@/pages/dashboard'
 import SmartCity from '@/pages/smart-city'
 import SmartPark from '@/pages/smart-park'
+import SmartFactory from '@/pages/smart-factory'
 import Login from '@/pages/login'
 import { RoutesProps } from './interface'
 
@@ -43,6 +44,11 @@ const routes: RoutesProps[] = [
     name: '智慧园区',
     path: '/smart-park',
     element: <SmartPark />
+  },
+  {
+    name: '智慧工厂',
+    path: '/smart-factory',
+    element: <SmartFactory />
   }
 ]
 
