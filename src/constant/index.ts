@@ -1,7 +1,7 @@
 export const REQUEST_URL = '/api'
 export const Routes_DEFAULT_PATH = '/home'
 export const FOOTER_CONTENT_TEXT = '浙江中核信息科技有限公司'
-export const PROJECT_TITLE_TEXT = 'React Code项目模板'
+export const PROJECT_TITLE_TEXT = 'React-Three-Fiber'
 export const SEX = [
   { label: '保密', value: 0 },
   { label: '男', value: 1 },

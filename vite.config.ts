@@ -20,6 +20,7 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
         '@': path.resolve(__dirname, 'src'),
         '@/static': path.resolve(__dirname, 'server/static/')
       }
-    }
+    },
+    server: {}
   }
 }
