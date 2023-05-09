@@ -27,7 +27,6 @@ const Image: FC<{
 
 const Images = () => {
   const { width, height } = useThree((state) => state.viewport)
-  console.log(width, height)
   const group = useRef<THREE.Group>(null)
   return (
     <group ref={group}>

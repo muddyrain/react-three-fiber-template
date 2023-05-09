@@ -6,6 +6,7 @@ import SmartPark from '@/pages/smart-park'
 import SmartFactory from '@/pages/smart-factory'
 import KingdomTears from '@/pages/Kingdom-Tears'
 import Login from '@/pages/login'
+import VRHouse from '@/pages/vr-house'
 import { RoutesProps } from './interface'
 
 /**
@@ -50,6 +51,11 @@ const routes: RoutesProps[] = [
     name: '智慧工厂',
     path: '/smart-factory',
     element: <SmartFactory />
+  },
+  {
+    name: 'vr全景看房',
+    path: '/vr-house',
+    element: <VRHouse />
   },
   {
     name: '王国之泪',
